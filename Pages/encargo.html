@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <link rel="stylesheet" href="../style.css">
+   <!--"stylesheet" es una hoja de estilos-->
+   
+   <link rel="icon" href="../Icons/favicon.ico">
+<title>Dulce Placer</title>
+</head>
+<body>
+
+   <header id="header"> <!-- Cabecera -->
+      <nav id="navBar"> <!-- Navegación-->
+         <img class="fotologo" src="Icons/logoDP.png" alt="logoDP">
+         <ul>
+            <li><a href="../Index.html">Inicio</a></li>
+            <li><a href="../Pages/conócenos.html">Conócenos</a></li>
+            <li><a href="../Pages/productos.html">Productos</a></li>
+            <li><a href="../Pages/encargo.html">Encargo</a></li>
+            <li><a href="../Pages/contacto.html">Contacto</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <main id="main" class="main-encargar">
+      <div class="contacto__titulo">
+         <h1 class="main__titulo"><span class="titulo__primer-letra">E</span>ncargar
+         </h1>
+      </div>
+
+      <div class="contacto__aviso-seguridad">
+         <p>Hola te invitamos a formar parte de esta familia, para ello es necesario completar lo siguiente ...</p>
+      </div>
+
+      <section class="encargar__formulario">
+         <form class="formulario" action="">
+            <div class="form__columna-izq">
+               <div class="form__group">
+                  <label for="producto">Producto:</label>
+                  <select class="form__control" name="producto" id="producto">
+                     <option value="#" selected disabled>Seleccione el producto</option>
+                     <option value="">Item1</option>
+                     <option value="">Item2</option>
+                     <option value="">Item3</option>
+                     <option value="">Item4</option>
+                  </select>
+               </div>
+               <div class="form__group">
+                  <label for="dia">Para que día:</label>
+                  <select class="form__control" name="dia" id="dia">
+                     <option value="#" selected disabled>Seleccione para que dia</option>
+                     <option value="">Item1</option>
+                     <option value="">Item2</option>
+                     <option value="">Item3</option>
+                     <option value="">Item4</option>
+                  </select>
+               </div>
+               <div class="form_group">
+                  <label for="dia">Soy alergico a:</label>
+                  <textarea name="alergico" id="alergico" class="form__control" placeholder="Soy alérgico a..."
+                     rows="4"></textarea>
+               </div>
+            </div>
+            <div class="form__columna-der">
+               <div class="form__group">
+                  <label for="decoracion">Decoración:</label>
+                  <select class="form__control" name="decoracion" id="decoracion">
+                     <option value="#" selected disabled>Seleccione su declaración</option>
+                     <option value="">Item1</option>
+                     <option value="">Item2</option>
+                     <option value="">Item3</option>
+                     <option value="">Item4</option>
+                  </select>
+               </div>
+               <div class="form__group">
+                  <label for="relleno">Relleno:</label>
+                  <select class="form__control" name="relleno" id="relleno">
+                     <option value="#" selected disabled>Seleccione el relleno</option>
+                     <option value="">Item1</option>
+                     <option value="">Item2</option>
+                     <option value="">Item3</option>
+                     <option value="">Item4</option>
+                  </select>
+               </div>
+               <div class="form_group">
+                  <label for="dia">Sugerencia:</label>
+                  <textarea name="sugerencia" id="sugerencia" class="form__control"
+                     placeholder="Algo que le inquiete de nuestro producto?" rows="4"></textarea>
+               </div>
+            </div>
+            <div class="form__columna-pie">
+               <div class="form-group">
+                  <button class="contacto__button" type="submit">E N C A R G A R</button>
+               </div>
+            </div>
+         </form>
+      </section>
+
+      <section class="encargar__final-pagina">
+
+         <hr class="contacto__linea">
+         <p><b>Nota Adicional:</b> NO hacemos envio, NO llevamos a domicilio, NO aceptamos transferencia</p>
+      </section>
+
+
+   </main>
+
+   <footer id="footer"> <!--Pie de página, redes sociales, logo y demas-->
+
+      <section class="footer_logo">
+         <img src="Icons/logoDP.png" alt="logo">
+
+      </section>
+
+      <section class="footer_links">
+         <ul>
+            <li><a href="../Index.html">Inicio</a></li>
+            <li><a href="../Pages/conócenos.html">Conócenos</a></li>
+            <li><a href="../Pages/productos.html">Productos</a></li>
+            <li><a href="../Pages/encargo.html">Encargo</a></li>
+            <li><a href="../Pages/contacto.html">Contacto</a></li>
+         </ul>
+      </section>
+
+      <section class="footer_redes">
+         <h2>¡SÍGUENOS!</h2>
+         <a href="https://www.instagram.com/"><img src="/Images/pages-images/Instagram_logo.JPG" alt="instagram"></a>
+         <a href="https://www.whatsapp.com/?lang=es_LA"><img src="/Images/pages-images/WhatsApp-logo.png" alt="whatsapp"></a>
+      </section>
+   </footer>
+
+</body>
+</html>
