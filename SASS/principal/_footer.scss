@@ -1,0 +1,40 @@
+/*FOOTER*/
+#footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    background-color: #ffe0ea;
+}
+
+.footer_logo,
+.footer_links,
+.footer_redes {
+    border: 2px #c26c9f solid;
+    padding: 6px;
+}
+
+.footer_logo img {
+    width: 120px;
+    height: 120px;
+}
+
+.footer_links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_redes {
+    text-align: center;
+}
+
+.footer_redes img {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}

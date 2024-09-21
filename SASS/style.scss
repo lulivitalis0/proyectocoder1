@@ -1,0 +1,114 @@
+/*
+important
+id
+class
+selectores/ etiquetas 
+*/
+
+/*ESTILOS RESET / BODY Y MAIN*/
+@import "principal/reset-styles";
+/*ESTILOS NAVBAR*/
+@import "principal/navBar";
+/*ESTILOS FOOTER*/
+@import "principal/footer";
+/*ESTILOS QUERIES*/
+@import "principal/queries";
+
+/*IMPORT PAGE PRODUCTOS*/
+@import "productos/productos";
+
+
+
+
+
+
+
+/* */
+
+
+/*MAIN PORTADA*/
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.img-inicio_portada {
+    width: 290px;
+    height: 210px;
+    margin-bottom: 30px;
+}
+
+.texto_portada {
+    text-align: left;
+}
+
+.texto-portada_negrita {
+    font-weight: 800;
+}
+
+
+/*PÁGINA CONTACTO*/
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 550px;
+
+}
+
+.form_contenido {
+    display: flex;
+}
+
+.form_contenido .form_relleno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.form_relleno input,
+.form_relleno select {
+    width: 250px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.form_relleno textarea {
+    resize: none;
+    width: 250px;
+    height: 90px;
+    margin-top: 10px;
+}
+
+.form_mapa {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_envio input {
+    width: 100px;
+    height: 45px;
+    border: 1px grey solid;
+    background-color: #ffb8ce;
+    color: white;
+    border-radius: 20px 0 20px 0;
+    margin-top: 30px;
+}
+
+.carousel-item active {
+    color: white;
+    /* height: 50%;
+    width: 50%; */
+    transition-duration: .6s;
+}
+
+.carousel-inner {
+    /* width: 40%;
+    height: 40%; */
+    transition: opacity .6s ease;
+    justify-items: center;
+}

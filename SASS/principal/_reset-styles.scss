@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*border: 1px red solid (ESTO ME sirve pa marcar las lineas de cajas Y MARCAR COSAS, yo me entiendo jajaj)*/
+
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#body {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 50px;
+}

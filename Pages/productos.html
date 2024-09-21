@@ -4,21 +4,21 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-   <link rel="stylesheet" href="../style.css">
+   <link rel="stylesheet" href="../CSS/style.css">
    <link rel="icon" href="../Icons/favicon.ico">
    <title>Dulce Placer</title>
 </head>
 
-<body>
+<body id="body">
    <header id="header"> <!-- Cabecera -->
       <nav id="navBar"> <!-- Navegación-->
          <img class="fotologo" src="../Icons/logoDP.png" alt="logoDP">
          <ul>
             <li><a href="../Index.html">Inicio</a></li>
-            <li><a href="../MP/Pages/conócenos.html">Conócenos</a></li>
-            <li><a href="../MP/Pages/productos.html">Productos</a></li>
-            <li><a href="../MP/Pages/encargo.html">Encargo</a></li>
-            <li><a href="../MP/Pages/contacto.html">Contacto</a></li>
+            <li><a href="../Pages/conócenos.html">Conócenos</a></li>
+            <li><a href="../Pages/productos.html">Productos</a></li>
+            <li><a href="../Pages/encargo.html">Encargo</a></li>
+            <li><a href="../Pages/contacto.html">Contacto</a></li>
          </ul>
       </nav>
    </header>
@@ -28,20 +28,36 @@
       <h2> Dulce Placer</h2>
       <br>
 
-      <div class="productos img">
-         <h2 class="title-cookies">Cookies</h2>
-         <img src="../Images/cookies/1.jpg" alt="" class="cookie1"></img>
-         <img src="../Images/cookies/2.jpg" alt="" class="cookie2"></img>
-         <img src="../Images/cookies/3.jpg" alt="" class="cookie3"></img>
-         <h2 class="title-pavlova">Pavlova</h2>
-         <img src="../Images/pavlova/4.jpg" alt="" class="pavlova1"></img>
-         <img src="../Images/pavlova/5.jpg" alt="" class="pavlova2"></img>
-         <img src="../Images/pavlova/6.jpg" alt="" class="pavlova3"></img>
-         <h2 class="title-cheesecake">Cheesecake</h2>
-         <img src="../Images/cheesecake/7.webp" alt="" class="cheesecake1"></img>
-         <img src="../Images/cheesecake/8.webp" alt="" class="cheesecake2"></img>
-         <img src="../Images/cheesecake/9.jpg" alt="" class="cheesecake3"></img>
-         <h2 class="title-brownie">Brownie</h2>
+      <div class="productos">
+
+         <article class="productos__cookies">
+            <h2 class="title-cookies">Cookies</h2>
+            <section class="productos__cookies">
+               <img src="../Images/cookies/1.jpg" alt="" class="cookie1"></img>
+               <img src="../Images/cookies/2.jpg" alt="" class="cookie2"></img>
+               <img src="../Images/cookies/3.jpg" alt="" class="cookie3"></img>
+            </section>
+         </article>
+         
+         <article class="productos__pavlova">
+            <h2 class="title-pavlova">Pavlova</h2>
+            <section class="productos__pavlova-pavlova">
+               <img src="../Images/pavlova/4.jpg" alt="" class="pavlova1"></img>
+               <img src="../Images/pavlova/5.jpg" alt="" class="pavlova2"></img>
+               <img src="../Images/pavlova/6.jpg" alt="" class="pavlova3"></img>
+            </section>
+         </article>
+
+         <article class="productos__cheesecake">
+            <h2 class="title-cheesecake">Cheesecake</h2>
+            <section class="productos__cheesecake-section">
+               <img src="../Images/cheesecake/7.webp" alt="" class="cheesecake1"></img>
+               <img src="../Images/cheesecake/8.webp" alt="" class="cheesecake2"></img>
+               <img src="../Images/cheesecake/9.jpg" alt="" class="cheesecake3"></img>
+            </section>
+         </article>
+         
+         <!-- <h2 class="title-brownie">Brownie</h2>
          <img src="../Images/brownie/10.jpg" alt="" class="borwnies1"></img>
          <img src="../Images/brownie/11.jpg" alt="" class="brownie2"></img>
          <img src="../Images/brownie/12.jpg" alt="" class="brownie3"></img>
@@ -68,17 +84,17 @@
          <h2 class="title-tartas">Tartas</h2>
          <img src="../Images/tartas/28.jpg" alt="" class="tarta1"></img>
          <img src="../Images/tartas/29.png" alt="" class="tarta2"></img>
-         <img src="../Images/tartas/30.jpg" alt="" class="tarta3"></img>
-      </div>
+         <img src="../Images/tartas/30.jpg" alt="" class="tarta3"></img> -->
+      </div> 
 
    </main>
 </body>
 
 <footer id="footer"> <!--Pie de página, redes sociales, logo y demas-->
 
-               <section class="footer_logo">
-               <img src="../Icons/logoDP.png" alt="logo">
-               </section>
+   <section class="footer_logo">
+      <img src="../Icons/logoDP.png" alt="logo">
+   </section>
 
    <section class="footer_links">
       <ul>

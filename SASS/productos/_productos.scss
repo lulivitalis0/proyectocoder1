@@ -1,0 +1,12 @@
+.productos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.productos img {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+}
