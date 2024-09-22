@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="https://getbootstrap.com/docs/5.3/assets/css/docs.css" crossorigin="anonymous">
-   <title>Dulce Placer</title>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-   <link rel="stylesheet" href="../CSS/style.css"> <!--"stylesheet" es una hoja de estilos-->
-   <link rel="icon" href="../Icons/favicon.ico">
 
+   <!-- Libreria de BTS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="https://getbootstrap.com/docs/5.3/assets/css/docs.css" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="../CSS/style.css"> <!--"stylesheet" es una hoja de estilos-->
+   <link rel="icon" href="Icons/favicon.ico">
+   <title>Dulce Placer</title>
 </head>
 
 <body id="body"> <!--CUERPO, lo que el usuario ve-->
-   <header id="header"> <!-- Cabecera -->
-      <nav id="navBar"> <!-- Navegación-->
-         <img class="fotologo" src="../Icons/logoDP.png" alt="logoDP">
-         <ul>
-            <li><a href="../Index.html">Inicio</a></li>
-            <li><a href="../Pages/conócenos.html">Conócenos</a></li>
-            <li><a href="../Pages/productos.html">Productos</a></li>
-            <li><a href="../Pages/encargo.html">Encargo</a></li>
-            <li><a href="../Pages/contacto.html">Contacto</a></li>
-         </ul>
+   <header id="header">
+      <nav class="navbar navbar-expand-lg">
+         <div class="container-fluid">
+            <img class="logoDP" src="../Icons/logoDP.png" alt="logo_DP">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                     <li class="nav-item"><a class="nav-link" href="../Index.html">Inicio</a></li>
+                     <li class="nav-item"><a class="nav-link" href="../Pages/conócenos.html">Conócenos</a></li>
+                     <li class="nav-item"><a class="nav-link" href="../Pages/productos.html">Productos</a></li>
+                     <li class="nav-item"><a class="nav-link" href="../Pages/encargo.html">Encargo</a></li>
+                     <li class="nav-item"><a class="nav-link" href="../Pages/contacto.html">Contacto</a></li>
+                  </ul>
+            </div>
+         </div>
       </nav>
    </header>
 
    <main id="main"> <!-- Contenido/Cajas del sitio, imagenes, parrafos, listas, links-->
-      <h1>Conócenos</h1>
+      <h1>❀ Conócenos ❀</h1>
       <hr> <!--ESTA ES LA LÍNEA HORIZONTAL-->
-      <P>CARROUSEL</P>
+      <P>( ᵔ ᴗ ᵔ )</P>
       <!-- centramos usando flex y le damos 100% para que sepa cuánto espacio tiene disponible para centrarlo -->
       <div class="d-flex w-100 justify-content-center">
          <!-- aca elegimos el ancho usando las columnas 
@@ -40,13 +47,22 @@
          <div id="carousel-example-slides-only" class="carousel slide col-12 col-md-8 col-lg-3" data-bs-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
-                  <img src="../Carru/carrusel.jpg" class="d-block w-100" alt="priemrfoto">
+                  <img src="../Carru/carrousel1.avif" class="d-block w-100" alt="priemrfoto">
                </div>
                <div class="carousel-item">
-                  <img src="../Carru/carrusel1.avif" class="d-block w-100" alt="segundafoto">
+                  <img src="../Carru/carrousel2.jpg" class="d-block w-100" alt="segundafoto">
                </div>
                <div class="carousel-item">
-                  <img src="../Carru/carrusel2.jpg" class="d-block w-100" alt="tercerfoto">
+                  <img src="../Carru/carrousel3.avif" class="d-block w-100" alt="tercerfoto">
+               </div>
+               <div class="carousel-item">
+                  <img src="../Carru/carrousel4.avif" class="d-block w-100" alt="cuartafoto">
+               </div>
+               <div class="carousel-item">
+                  <img src="../Carru/carrousel5.webp" class="d-block w-100" alt="quintafoto">
+               </div>
+               <div class="carousel-item">
+                  <img src="../Carru/carrousel6.webp" class="d-block w-100" alt="sextafoto">
                </div>
             </div>
          </div>
@@ -95,7 +111,8 @@
                alt="whatsapp"></a>
       </section>
    </footer>
+   <!-- SCRIPT BTS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
-
 </html>

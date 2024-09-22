@@ -3,109 +3,75 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   <link rel="stylesheet" href="../CSS/style.css">
-   
-   <link rel="icon" href="../Icons/favicon.ico">
-<title>Dulce Placer</title>
-</head>
-<body id="body">
 
-   <header id="header"> <!-- Cabecera -->
-      <nav id="navBar"> <!-- Navegación-->
-         <img class="fotologo" src="../Icons/logoDP.png" alt="logoDP">
-         <ul>
-            <li><a href="../Index.html">Inicio</a></li>
-            <li><a href="../Pages/conócenos.html">Conócenos</a></li>
-            <li><a href="../Pages/productos.html">Productos</a></li>
-            <li><a href="../Pages/encargo.html">Encargo</a></li>
-            <li><a href="../Pages/contacto.html">Contacto</a></li>
-         </ul>
+   <!-- Libreria de BTS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="https://getbootstrap.com/docs/5.3/assets/css/docs.css" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="../CSS/style.css"> <!--"stylesheet" es una hoja de estilos-->
+   <link rel="icon" href="Icons/favicon.ico">
+   <title>Dulce Placer</title>
+</head>
+
+
+<body id="body">
+   <header id="header">
+      <nav class="navbar navbar-expand-lg">
+         <div class="container-fluid">
+            <img class="logoDP" src="../Icons/logoDP.png" alt="logo_DP">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                     <li class="nav-item"><a class="nav-link" href="../Index.html">Inicio</a></li>
+                     <li class="nav-item"><a class="nav-link" href="../Pages/conócenos.html">Conócenos</a></li>
+                     <li class="nav-item"><a class="nav-link" href="../Pages/productos.html">Productos</a></li>
+                     <li class="nav-item"><a class="nav-link" href="../Pages/encargo.html">Encargo</a></li>
+                     <li class="nav-item"><a class="nav-link" href="../Pages/contacto.html">Contacto</a></li>
+                  </ul>
+            </div>
+         </div>
       </nav>
    </header>
 
-   <main id="main" class="main-encargar">
-      <div class="contacto__titulo">
-         <h1 class="main__titulo"><span class="titulo__primer-letra">E</span>ncargar
-         </h1>
-      </div>
+   <main id="mainn">
 
-      <div class="contacto__aviso-seguridad">
-         <p>Hola te invitamos a formar parte de esta familia, para ello es necesario completar lo siguiente ...</p>
-      </div>
+      <form action="" id="form">
 
-      <section class="encargar__formulario">
-         <form class="formulario" action="">
-            <div class="form__columna-izq">
-               <div class="form__group">
-                  <label for="producto">Producto:</label>
-                  <select class="form__control" name="producto" id="producto">
-                     <option value="#" selected disabled>Seleccione el producto</option>
-                     <option value="">Item1</option>
-                     <option value="">Item2</option>
-                     <option value="">Item3</option>
-                     <option value="">Item4</option>
-                  </select>
-               </div>
-               <div class="form__group">
-                  <label for="dia">Para que día:</label>
-                  <select class="form__control" name="dia" id="dia">
-                     <option value="#" selected disabled>Seleccione para que dia</option>
-                     <option value="">Item1</option>
-                     <option value="">Item2</option>
-                     <option value="">Item3</option>
-                     <option value="">Item4</option>
-                  </select>
-               </div>
-               <div class="form_group">
-                  <label for="dia">Soy alergico a:</label>
-                  <textarea name="alergico" id="alergico" class="form__control" placeholder="Soy alérgico a..."
-                     rows="4"></textarea>
-               </div>
-            </div>
-            <div class="form__columna-der">
-               <div class="form__group">
-                  <label for="decoracion">Decoración:</label>
-                  <select class="form__control" name="decoracion" id="decoracion">
-                     <option value="#" selected disabled>Seleccione su declaración</option>
-                     <option value="">Item1</option>
-                     <option value="">Item2</option>
-                     <option value="">Item3</option>
-                     <option value="">Item4</option>
-                  </select>
-               </div>
-               <div class="form__group">
-                  <label for="relleno">Relleno:</label>
-                  <select class="form__control" name="relleno" id="relleno">
-                     <option value="#" selected disabled>Seleccione el relleno</option>
-                     <option value="">Item1</option>
-                     <option value="">Item2</option>
-                     <option value="">Item3</option>
-                     <option value="">Item4</option>
-                  </select>
-               </div>
-               <div class="form_group">
-                  <label for="dia">Sugerencia:</label>
-                  <textarea name="sugerencia" id="sugerencia" class="form__control"
-                     placeholder="Algo que le inquiete de nuestro producto?" rows="4"></textarea>
-               </div>
-            </div>
-            <div class="form__columna-pie">
-               <div class="form-group">
-                  <button class="contacto__button" type="submit">E N C A R G A R</button>
-               </div>
-            </div>
-         </form>
-      </section>
+         <h1>Encargo</h1>
 
-      <section class="encargar__final-pagina">
+         <section class="form_node">
+            <section class="form_contenido">
+                  <input type="text" name="nombre" placeholder="Nombre">
 
-         <hr class="contacto__linea">
-         <p><b>Nota Adicional:</b> NO hacemos envio, NO llevamos a domicilio, NO aceptamos transferencia</p>
-      </section>
+                  <input type="email" name="email" placeholder="Correo">
+
+                  <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+
+                  <select name="consolas" id="consolas">
+                     <option value="PS">Consolas</option>
+                     <option value="PS1">Play 1</option>
+                     <option value="PS2">Play 2</option>
+                     <option value="PS3">Play 3</option>
+                     <option value="PS4">Play 4</option>
+                     <option value="PS5">Play 5</option>
+                  </select>
+                  
+                  <section class="form-contenido_btn">
+                     <input type="reset" value="Borrar Mensaje">
+                     <input type="submit" value="Enviar Consulta">
+                  </section>
+                  
+            </section>
+            
+         </section>
+
+      </form>
 
 
    </main>
+
 
    <footer id="footer"> <!--Pie de página, redes sociales, logo y demas-->
 
@@ -131,5 +97,8 @@
       </section>
    </footer>
 
+   <!-- SCRIPT BTS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
-</html>
+</html> 

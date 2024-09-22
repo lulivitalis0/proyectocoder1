@@ -1,26 +1,40 @@
-.fotologo {
-    height: 50px;
-    width: 50x;
-}
-
-#navBar {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.logoDP {
-    width: 70px;
-    height: 70px;
-}
-
 #header {
     width: 100%;
-    height: 70px;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3114495798319328) 0%, rgba(255, 162, 192, 1) 100%);
-    position: sticky;
+    height: auto; 
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 162, 192, 1) 100%);
+    position: fixed;
     top: 0;
     z-index: 100;
+
+    .navbar {
+        display: flex;
+        align-items: center; // Centra verticalmente
+        justify-content: space-between; // Espaciado entre logo y menú
+
+        .logoDP {
+            width: 70px;
+            height: 70px;
+        }
+
+        .navbar-toggler {
+            margin-left: auto; // Asegura que el botón de menú esté a la derecha
+        }
+
+        .navbar-collapse {
+            display: flex;
+            justify-content: flex-end; // Alinear elementos a la derecha
+            flex-grow: 1; // Permite que la barra de navegación ocupe espacio
+
+            .navbar-nav {
+                display: flex; // Asegúrate de que las listas se alineen correctamente
+                list-style: none; // Sin estilo de lista
+                padding: 0; // Sin padding
+                margin: 0; // Sin margen
+
+                .nav-item {
+                    margin-left: 15px; // Espaciado entre elementos de la lista
+                }
+            }
+        }
+    }
 }
