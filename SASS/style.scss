@@ -13,7 +13,6 @@ selectores/ etiquetas
 @import "principal/footer";
 /*ESTILOS QUERIES*/
 @import "principal/queries";
-
 /*IMPORT PAGE PRODUCTOS*/
 @import "productos/productos";
 
@@ -105,4 +104,14 @@ h1 {
     height: 40%; */
     transition: opacity .6s ease;
     justify-items: center;
+}
+
+
+// PAGINA ENCARGO
+.modal-dialog , .modal-content {
+    background-color: #ffb8ce;
+    width: 5vw;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

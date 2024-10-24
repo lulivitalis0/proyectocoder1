@@ -24,10 +24,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
-                     <li class="nav-item"><a class="nav-link" href="../Index.html">Inicio</a></li>
+                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                      <li class="nav-item"><a class="nav-link" href="../Pages/conócenos.html">Conócenos</a></li>
                      <li class="nav-item"><a class="nav-link" href="../Pages/productos.html">Productos</a></li>
-                     <li class="nav-item"><a class="nav-link" href="../Pages/encargo.html">Encargo</a></li>
+                     <li class="nav-item"><a class="nav-link active" href="../Pages/encargo.html">Encargo</a></li>
                      <li class="nav-item"><a class="nav-link" href="../Pages/contacto.html">Contacto</a></li>
                   </ul>
             </div>
@@ -35,41 +35,105 @@
       </nav>
    </header>
 
-   <main id="mainn">
+   <main id="main">
+   <h1>❀ Encargo ❀</h1>
+   
+   <form action="" id="form">
 
-      <form action="" id="form">
+   <div class="form_relleno">
 
-         <h1>Encargo</h1>
-
-         <section class="form_node">
-            <section class="form_contenido">
-                  <input type="text" name="nombre" placeholder="Nombre">
-
-                  <input type="email" name="email" placeholder="Correo">
-
-                  <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
-
-                  <select name="consolas" id="consolas">
-                     <option value="PS">Consolas</option>
-                     <option value="PS1">Play 1</option>
-                     <option value="PS2">Play 2</option>
-                     <option value="PS3">Play 3</option>
-                     <option value="PS4">Play 4</option>
-                     <option value="PS5">Play 5</option>
-                  </select>
-                  
-                  <section class="form-contenido_btn">
-                     <input type="reset" value="Borrar Mensaje">
-                     <input type="submit" value="Enviar Consulta">
-                  </section>
-                  
-            </section>
-            
+      <article> 
+         <section class="producto"> <!-- Producto a retirar -->
+            <select name="producto">
+            <option value="producto1">Cookies</option>
+            <option value="producto2">Pavlova</option>
+            <option value="producto3">Cheesecake</option>
+            <option value="producto4">Brownie</option>
+            <option value="producto5">Mousse</option>
+            <option value="producto6">Rogel</option>
+            <option value="producto7">Lemon Pie</option>
+            <option value="producto8">Créme Brulee</option>
+            <option value="producto9">Panna Cotta</option>
+            <option value="producto10">Tartas</option>
+         </select>
          </section>
 
+         <section class="sabor">
+            <select name="sabor">
+            <option value="sabor1">Chocolate</option>
+            <option value="sabor2">Dulce de leche</option>
+            <option value="sabor3">Limón</option>
+            <option value="sabor4">Crema pastelera</option>
+            <option value="sabor5">Queso crema y frutas</option>
+            <option value="sabor6">Nutella</option>
+            <option value="sabor7">Frutilla</option>
+            <option value="sabor8">Vainilla</option>
+         </select>
+         </section>
+
+         <section class="tamaño"> <!-- tamaño a retirar -->
+            <select name="tamaño">
+            <option value="tamaño1">Pequeña (4-8 porciones) 15 cm</option>
+            <option value="tamaño2">Mediano (8-12 porciones) 20cm</option>
+            <option value="tamaño3">Grande (12-16 porciones) 25cm</option>
+         </select>
+         </section>
+
+         <section class="dia"> <!-- Día a retirar -->
+            <select name="dia">
+               <option value="dia1">Lunes</option>
+               <option value="dia2">Martes</option>
+               <option value="dia3">Miércoles</option>
+               <option value="dia4">Jueves</option>
+               <option value="dia5">Viernes</option>
+               <option value="dia6">Sábado</option><!-- "value" es lo que va a enviar el formulario-->
+               </select>
+         </section>
+         
+         <section class="hora"> <!-- Hora a retirar -->
+         <select name="hora">
+            <option value="hora1">10:00 a 11:00hs</option>
+            <option value="hora2">13:00 a 14:00hs</option>
+            <option value="hora3">17:00 a 18:00hs</option>
+         </select>
+         </section>
+
+         <section class="form_envio">
+         <input type="submit" name="" id="">
+         </section> 
+
+   </div>
+
+   <hr>
+         <p>Si tiene alguna sugerencia sobre cambios, aspectos a mantener o mejoras que podríamos implementar, le agradeceríamos que presionara el siguiente botón. ¡Muchas gracias!</p>
+
+         <!-- Button trigger modal -->
+         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> ¡ AQUÍ ! </button>
+               <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+
+               <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Aceptamos con todo el cariño sus recomendaciones ≧◠‿◠≦</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" justify-content="hover"></button>
+               </div>
+
+               <div class="adentro"> <!--adentro del modal -->
+               <input type="text" name="Nombre" placeholder="¡Lo que usted sienta!">
+               </div>
+
+               <div class="modal-body"></div>
+
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Enviar</button>
+               </div>
+            </div>
+            </div>
+         </div>
+      </section>
       </form>
-
-
    </main>
 
 

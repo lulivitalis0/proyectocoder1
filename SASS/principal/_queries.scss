@@ -3,3 +3,24 @@
         flex-direction: column;
     }
 }
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        display: none; 
+        flex-direction: column; 
+        width: 100%;
+        position: absolute; 
+        top: 100%; //debajo del header
+        left: 0;
+        background: rgba(255, 255, 255, 0.9); // Fondo para el menú
+        z-index: 99; //encima
+    }
+
+    .navbar-collapse.show {
+        display: flex; //Bootstrap lo maneje
+    }
+
+    .navbar-toggler {
+        cursor: pointer; //indica que es clickeable
+    }
+}

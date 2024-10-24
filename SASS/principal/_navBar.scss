@@ -8,8 +8,8 @@
 
     .navbar {
         display: flex;
-        align-items: center; // Centra verticalmente
-        justify-content: space-between; // Espaciado entre logo y menú
+        align-items: center; //Centra verticalmente
+        justify-content: space-between; //Espaciado entre logo y menú
 
         .logoDP {
             width: 70px;
@@ -17,7 +17,7 @@
         }
 
         .navbar-toggler {
-            margin-left: auto; // Asegura que el botón de menú esté a la derecha
+            margin-left: auto; //Asegura que el botón de menú esté a la derecha
         }
 
         .navbar-collapse {
@@ -36,5 +36,27 @@
                 }
             }
         }
+    }
+}
+
+// Estilo pantallas pequeñas
+@media (max-width: 768px) {
+    .navbar-collapse {
+        display: none; 
+        flex-direction: column; 
+        width: 100%;
+        position: absolute; 
+        top: 100%; // debajo del header
+        left: 0;
+        background: rgba(255, 255, 255, 0.9); // Fondo para el menú
+        z-index: 99; //encima
+    }
+
+    .navbar-collapse.show {
+        display: flex; //Bootstrap lo maneje
+    }
+
+    .navbar-toggler {
+        cursor: pointer; // Cambiar cursor para indicar que es clickeable
     }
 }
